@@ -30,45 +30,40 @@ class _MusicScreenState extends State<MusicScreen> {
       children: [
         Stack(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: CarouselSlider.builder(
-                carouselController: carouselController,
-                itemCount: 5,
-                itemBuilder: (context, index, realIndex) => Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    height: MediaQuery.sizeOf(context).height * 0.4,
-                    width: MediaQuery.sizeOf(context).width * 0.9,
-                    decoration: BoxDecoration(
-                        color: Colors.grey.shade50,
-                        borderRadius: BorderRadius.circular(5),
-                        border: Border.all(color: Colors.black26, width: 4)),
-                    child: InkWell(
-                      onTap: () {
-                        providerR!.changIndex(index);
-                        Navigator.pushNamed(context, 'musicPlay');
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset(
-                          "assets/image/${providerW!.musicList[index].imagePath}",
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+            CarouselSlider.builder(
+              carouselController: carouselController,
+              itemCount: 5,
+              itemBuilder: (context, index, realIndex) => Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: MediaQuery.sizeOf(context).height * 0.4,
+                  width: MediaQuery.sizeOf(context).width,
+                  decoration: BoxDecoration(
+                      color: Colors.grey.shade50,
+                      borderRadius: BorderRadius.circular(5),
+                      border: Border.all(color: Colors.black26, width: 4)),
+                  child: InkWell(
+                    onTap: () {
+                      providerR!.changIndex(index);
+                      Navigator.pushNamed(context, 'musicPlay');
+                    },
+                    child: Image.asset(
+                      "assets/image/${providerW!.musicList[index].imagePath}",
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                options: CarouselOptions(
-                  onPageChanged: (index, reason) {
-                    providerW!.changeIndexSlider(index);
-                  },
-                  initialPage: providerR!.sliderIndex,
-                  autoPlayInterval: const Duration(seconds: 2),
-                  autoPlay: true,
-                  enableInfiniteScroll: true,
-                  animateToClosest: true,
-                ),
+              ),
+              options: CarouselOptions(
+                onPageChanged: (index, reason) {
+                  providerW!.changeIndexSlider(index);
+                },
+                initialPage: providerR!.sliderIndex,
+                autoPlayInterval: const Duration(seconds: 2),
+                autoPlay: true,
+                enableInfiniteScroll: true,
+                enlargeCenterPage: true,
+                animateToClosest: true,
               ),
             ),
             const SizedBox(

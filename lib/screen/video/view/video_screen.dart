@@ -47,14 +47,11 @@ class _VideoScreenState extends State<VideoScreen> {
                     child: InkWell(
                       onTap: () {
                         providerR!.changIndex(index);
-                        Navigator.pushNamed(context, 'musicPlay');
+                        Navigator.pushNamed(context, 'videoPlay');
                       },
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset(
-                          "assets/image/${providerW!.videoList[index].imagePath}",
-                          fit: BoxFit.cover,
-                        ),
+                      child: Image.asset(
+                        "assets/image/${providerW!.videoList[index].imagePath}",
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
@@ -66,6 +63,7 @@ class _VideoScreenState extends State<VideoScreen> {
                   initialPage: providerR!.sliderIndex,
                   autoPlayInterval: const Duration(seconds: 2),
                   autoPlay: true,
+                  enlargeCenterPage: true,
                   enableInfiniteScroll: true,
                   animateToClosest: true,
                 ),
@@ -98,7 +96,7 @@ class _VideoScreenState extends State<VideoScreen> {
                 child: InkWell(
                   onTap: () {
                     providerR!.changIndex(index);
-                    Navigator.pushNamed(context, 'musicPlay');
+                    Navigator.pushNamed(context, 'videoPlay');
                   },
                   child: Container(
                     height: height,
@@ -132,7 +130,7 @@ class _VideoScreenState extends State<VideoScreen> {
       width: 8,
       decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: index == providerW!.sliderIndex ? green : black),
+          color: index == providerW!.sliderIndex ? green : white),
     );
   }
 }
