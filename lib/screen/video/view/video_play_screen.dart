@@ -35,23 +35,29 @@ class _VideoPlayScreenState extends State<VideoPlayScreen> {
   Widget build(BuildContext context) {
     providerR = context.read<VideoProvider>();
     providerW = context.watch<VideoProvider>();
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          iconTheme: IconThemeData(color: white),
-          title: Text(
-            "Video Play",
-            style: TextStyle(fontSize: 22, color: white),
+    return PopScope(
+      onPopInvoked: (didPop) async {
+      await  context.read<VideoProvider>().chewieController!.pause();
+      },
+      child: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            centerTitle: true,
+            iconTheme: IconThemeData(color: white),
+            title: Text(
+              "Video Play",
+              style: TextStyle(fontSize: 22, color: white),
+            ),
+            backgroundColor: black,
+          ),
+          body: Center(
+            child: SizedBox(
+                height: 250,
+                child: Chewie(
+                  controller: providerR!.chewieController!,
+                )),
           ),
           backgroundColor: black,
-        ),
-        body: Center(
-          child: SizedBox(
-              height: 200,
-              child: Chewie(
-                controller: providerR!.chewieController!,
-              )),
         ),
       ),
     );

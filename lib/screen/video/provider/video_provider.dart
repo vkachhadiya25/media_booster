@@ -14,11 +14,11 @@ class VideoProvider with ChangeNotifier
 
   List<VideoModel> videoList = [
 
-    VideoModel(imagePath: "Chaleya.jpeg",name: "Chaleya",videoPath: "music1.mp4"),
-    VideoModel(imagePath: "Heeriye.jpeg",name: "Heeriye",videoPath: "music2.mp4"),
-    VideoModel(imagePath: "Kesariya1.jpeg",name: "Kesariya",videoPath: "music3.mp4"),
-    VideoModel(imagePath: "Satranga1.jpeg",name: "Satranga",videoPath: "music4.mp4"),
-    VideoModel(imagePath: "Tum Kya Mile1.jpeg",name: "Tum Kya Mile",videoPath: "music5.mp4"),
+    VideoModel(imagePath: "Chaleya.jpeg",name: "Chaleya",videoPath: "assets/video/music1.mp4"),
+    VideoModel(imagePath: "Heeriye.jpeg",name: "Heeriye",videoPath: "assets/video/music2.mp4"),
+    VideoModel(imagePath: "Kesariya1.jpeg",name: "Kesariya",videoPath: "assets/video/music3.mp4"),
+    VideoModel(imagePath: "Satranga1.jpeg",name: "Satranga",videoPath: "assets/video/music4.mp4"),
+    VideoModel(imagePath: "Tum Kya Mile1.jpeg",name: "Tum Kya Mile",videoPath: "assets/video/music5.mp4"),
   ];
   void changIndex(int i) {
     index = i;
