@@ -15,11 +15,11 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-
 <p> 
-<img src ="https://github.com/vkachhadiya25/media_booster/assets/131163362/d715852d-651a-487c-b185-3bbfe934adc7" height = "400" width = "180" >
-  <img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/e195e91e-955d-4621-bb66-1f2be2b148ff" height = "400" width = "180">
-<img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/dbef875f-fe8a-4169-92f9-b1300f3f634d" height = "400" width = "180">
-  <img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/49a6a3db-3acd-4404-a923-850313790278" height = "400" width = "180">
-    <img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/17b4e849-428b-48b0-bc6a-dcf9f28f1d93" height = "400" width = "180">
+  <img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/2378e1ae-b570-4da6-b125-d6e7ec6d769c" height = "400" width = "220">
+    <img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/3a009921-6a67-4f2e-a907-f7ce16210b5d" height = "400" width = "220">
+  <img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/803e7df2-d07c-45a5-b891-1155ee502b79" height = "400" width = "220">
+  <img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/1451cd1b-7504-4549-a495-1217e222d460" height = "400" width = "220">
+  <img src = "https://github.com/vkachhadiya25/media_booster/assets/131163362/f616d8bf-2e6f-4c0e-8bcb-50bcaafb6c27" height = "400" width = "220">
+
 </p>
