@@ -127,7 +127,7 @@ class _MusicScreenState extends State<MusicScreen> {
       width: 8,
       decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: index == providerW!.sliderIndex ? green : white),
+          color: index == providerW!.sliderIndex ? Colors.blueGrey : white),
     );
   }
 }

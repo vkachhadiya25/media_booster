@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             "Music & Video Player",
             style: TextStyle(fontSize: 22, color: white),
           ),
-          backgroundColor: green,
+          backgroundColor: Colors.blueGrey,
         ),
         body: screen[providerW!.index],
         backgroundColor: black,
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
             int i = value;
             providerR!.changeIndex(i);
           },
-          backgroundColor: green,
+          backgroundColor: Colors.blueGrey,
         ),
       ),
     );

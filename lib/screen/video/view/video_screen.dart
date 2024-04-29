@@ -130,7 +130,7 @@ class _VideoScreenState extends State<VideoScreen> {
       width: 8,
       decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: index == providerW!.sliderIndex ? green : white),
+          color: index == providerW!.sliderIndex ? Colors.blueGrey : white),
     );
   }
 }
